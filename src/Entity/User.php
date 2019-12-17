@@ -6,11 +6,12 @@ namespace App\Entity;
 
 class User
 {
+
     private $id;
     private $firstName;
     private $lastName;
     private $birthDate;
-    private $updatedAt;
+    private $updateAt;
 
     /**
      * User constructor.
@@ -18,15 +19,15 @@ class User
      * @param $firstName
      * @param $lastName
      * @param $birthDate
-     * @param $updatedAt
+     * @param $updateAt
      */
-    public function __construct($id, $firstName, $lastName, $birthDate, $updatedAt)
+    public function __construct($id, $firstName, $lastName, $birthDate, $updateAt)
     {
         $this->id = $id;
         $this->firstName = $firstName;
         $this->lastName = $lastName;
         $this->birthDate = $birthDate;
-        $this->updatedAt = $updatedAt;
+        $this->updateAt = $updateAt;
     }
 
     /**
@@ -96,17 +97,17 @@ class User
     /**
      * @return mixed
      */
-    public function getUpdatedAt()
+    public function getUpdateAt()
     {
-        return $this->updatedAt;
+        return $this->updateAt;
     }
 
     /**
-     * @param mixed $updatedAt
+     * @param mixed $updateAt
      */
-    public function setUpdatedAt($updatedAt): void
+    public function setUpdateAt($updateAt): void
     {
-        $this->updatedAt = $updatedAt;
+        $this->updateAt = $updateAt;
     }
 
 
