@@ -16,3 +16,7 @@ put:
   path: /put/
   controller: App\Controller\HelloController::putAction
   methods: ['PUT']
+
+user:
+  path: /user/{lastName}/{firstName}
+  controller: App\Controller\UserController::createUser
