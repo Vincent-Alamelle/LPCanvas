@@ -1,3 +1,18 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+hello:
+  path: /hello
+  controller: App\Controller\HelloController::helloAction
+
+number:
+  path: /number/{number}
+  controller: App\Controller\HelloController::numberAction
+  requirements:
+    number: '\d+'
+
+put:
+  path: /put/
+  controller: App\Controller\HelloController::putAction
+  methods: ['PUT']
